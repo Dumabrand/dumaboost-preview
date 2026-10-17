@@ -28,7 +28,7 @@
     "src": "node_modules/@fontsource-variable/unbounded/files/unbounded-vietnamese-wght-normal.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DL_-obBG.css",
+    "file": "assets/app-Bo0BscoI.css",
     "name": "app",
     "names": [
       "app.css"
@@ -46,7 +46,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-Btfkooe9.js",
+    "file": "assets/app-CE5ldYyF.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
