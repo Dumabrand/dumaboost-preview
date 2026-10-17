@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Go-live checklist · DumaBoost</title>
+    <link rel="icon" href="/dumaboost-preview/favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="style" href="/dumaboost-preview/build/assets/app-Bo0BscoI.css" nonce=""><link rel="stylesheet" href="/dumaboost-preview/build/assets/app-Bo0BscoI.css" nonce="">
+<meta name="robots" content="noindex, nofollow">
+<style>#pv-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:84px;z-index:60;display:flex;gap:4px;padding:4px;border-radius:999px;background:#0B0B0F;box-shadow:0 8px 24px rgba(0,0,0,.3);font:600 13px/1 system-ui,sans-serif}
+#pv-bar a{color:#fff;text-decoration:none;padding:9px 14px;border-radius:999px}#pv-bar a.on{background:#D4FF3A;color:#0B0B0F}
+#pv-toast{position:fixed;left:50%;top:76px;transform:translateX(-50%);z-index:61;background:#FF3D7F;color:#fff;padding:10px 16px;border-radius:12px;font:600 14px system-ui,sans-serif;display:none;max-width:90vw;text-align:center}
+@media(min-width:768px){#pv-bar{bottom:20px}}</style>
+<script>
+(function(){var B='/dumaboost-preview';
+document.addEventListener('submit',function(e){var f=e.target,a=f.getAttribute('action')||'';e.preventDefault();e.stopImmediatePropagation();
+ var go=null;if(/\/(oda|order)$/.test(a))go=B+'/demo/lipa/';else if(/jaribio|simulate/.test(a))go=B+'/demo/fuatilia/';else if(/\/admin\/login/.test(a)||/\/admin\/mfa/.test(a))go=B+'/admin/';else if(/fuatilia$|track$/.test(a))go=B+'/demo/fuatilia/';
+ if(go){location.href=go;return;}var t=document.getElementById('pv-toast');t.textContent='Preview only — this button works on the real site.';t.style.display='block';setTimeout(function(){t.style.display='none'},2500);},true);
+document.addEventListener('DOMContentLoaded',function(){var admin=location.pathname.indexOf(B+'/admin')===0;var bar=document.createElement('div');bar.id='pv-bar';
+ bar.innerHTML='<a href="'+B+'/" class="'+(admin?'':'on')+'">Customer</a><a href="'+B+'/admin/" class="'+(admin?'on':'')+'">Admin</a>';document.body.appendChild(bar);
+ var t=document.createElement('div');t.id='pv-toast';document.body.appendChild(t);});
+})();
+</script></head>
+<body class="min-h-dvh bg-sunken text-fg">
+
+<div class="lg:grid lg:min-h-dvh lg:grid-cols-[16rem_1fr]">
+    <aside class="bg-ink text-white lg:sticky lg:top-0 lg:h-dvh lg:overflow-y-auto">
+        <div class="flex items-center justify-between px-5 py-4">
+            <a href="/dumaboost-preview/admin"><span class="inline-flex items-center gap-2 h-8">
+    <svg viewBox="0 0 64 64" class="h-full w-auto shrink-0" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#D4FF3A"></rect>
+        <path d="M38 4 13 37h15.5l-5.5 24 28-36H35.5l7-21z" fill="#FF3D7F" transform="translate(3.5 2.5)"></path>
+        <path d="M38 4 13 37h15.5l-5.5 24 28-36H35.5l7-21z" fill="#0B0B0F"></path>
+    </svg>
+    <span class="font-display text-[1.2rem] leading-none font-black tracking-tight">duma<span class="text-pink">boost</span></span>
+</span>
+</a>
+            <span class="rounded-full bg-white/10 px-2 py-0.5 text-[0.7rem] font-bold tracking-wider uppercase">Admin</span>
+        </div>
+        <nav class="flex gap-1 overflow-x-auto px-3 pb-3 text-[0.95rem] lg:block lg:space-y-5 lg:overflow-visible lg:pb-6" aria-label="Admin">
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">Overview</p>
+                                                                        <a href="/dumaboost-preview/admin" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1v-9.5Z"></path></svg>
+Dashboard</a>
+                                                                                                <a href="/dumaboost-preview/admin/profit" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+Profit guide</a>
+                                                                                                <a href="/dumaboost-preview/admin/launch" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors bg-volt text-ink"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+Go-live checklist</a>
+                                                            </div>
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">Sales</p>
+                                                                        <a href="/dumaboost-preview/admin/orders" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="4" y="4" width="6.5" height="6.5" rx="1.5"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"></rect></svg>
+Orders</a>
+                                                                                                <a href="/dumaboost-preview/admin/payments" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="3" y="5.5" width="18" height="13" rx="2"></rect><path d="M3 10h18M7 15h3"></path></svg>
+Payments</a>
+                                                                                                <a href="/dumaboost-preview/admin/refunds" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+Refunds</a>
+                                                                                                <a href="/dumaboost-preview/admin/tickets" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 5h16v11H9l-5 4V5Z"></path></svg>
+Support</a>
+                                                            </div>
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">Catalog</p>
+                                                                        <a href="/dumaboost-preview/admin/services" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9Z"></path><circle cx="8" cy="8" r="1.5"></circle></svg>
+Services &amp; prices</a>
+                                                                                                <a href="/dumaboost-preview/admin/suppliers" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 20a6.5 6.5 0 0 0-3-5.5"></path></svg>
+Suppliers</a>
+                                                            </div>
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">System</p>
+                                                                        <a href="/dumaboost-preview/admin/webhooks" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.5 5.7 3.5 9s-1 6.3-3.5 9c-2.5-2.7-3.5-5.7-3.5-9s1-6.3 3.5-9Z"></path></svg>
+Webhook log</a>
+                                                                                                <a href="/dumaboost-preview/admin/security" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6L12 3Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+Security</a>
+                                                            </div>
+                    </nav>
+        <div class="hidden border-t border-white/10 px-5 py-4 text-sm lg:block">
+            <p class="truncate font-semibold">owner@example.test</p>
+            <p class="text-white/50">Super Admin</p>
+            <form method="POST" action="/dumaboost-preview/admin/logout" class="mt-3"><input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><button class="flex items-center gap-2 font-bold text-volt"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="5" y="10.5" width="14" height="10" rx="2"></rect><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"></path></svg>
+Sign out</button></form>
+        </div>
+    </aside>
+    <main class="min-w-0 p-4 md:p-8">
+        <div class="mb-5 flex flex-wrap items-center gap-2">
+                            <span class="pill bg-warn-bg text-warn">TEST MODE · payments simulated</span>
+                        <span class="pill pill-neutral"><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6L12 3Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+2-step verified · auto sign-out after 30 min idle</span>
+            <form method="POST" action="/dumaboost-preview/admin/logout" class="ml-auto lg:hidden"><input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><button class="btn btn-ghost !min-h-9 !px-4 !py-1 text-sm">Sign out</button></form>
+        </div>
+                        <div class="flex flex-wrap items-end justify-between gap-4">
+    <div>
+        <h1 class="text-3xl font-black">Go-live checklist</h1>
+        <p class="mt-1 max-w-2xl text-muted">Everything needed before DumaBoost takes real money. Automatic checks update themselves; tick the paperwork items when done.</p>
+    </div>
+    <div class="min-w-56 text-right">
+        <p class="font-display tabular text-4xl font-black">2<span class="text-xl text-muted">/28</span></p>
+        <svg viewBox="0 0 100 6" preserveAspectRatio="none" class="mt-2 h-3 w-56 overflow-hidden rounded-full" role="img" aria-label="7% done">
+            <rect width="100" height="6" fill="var(--line)"></rect><rect width="7" height="6" fill="#D4FF3A"></rect>
+        </svg>
+        <p class="mt-1 text-sm font-semibold text-muted">7% done</p>
+    </div>
+</div>
+
+<div class="mt-6 grid gap-6 xl:grid-cols-2">
+            <section class="card p-5">
+            <h2 class="text-lg font-black">Website</h2>
+            <ul class="mt-3 divide-y divide-line">
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Real domain with HTTPS</p>
+                            <p class="mt-0.5 text-sm text-muted">APP_URL is http://localhost:8000. Set it to https://dumaboost.com once the domain points to Hostinger.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Live mode (debug off)</p>
+                            <p class="mt-0.5 text-sm text-muted">Set APP_ENV=production and APP_DEBUG=false in .env.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-volt text-ink"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+</span>
+                        <div class="min-w-0">
+                            <p class="font-semibold text-muted line-through decoration-2">Preview password removed</p>
+                                                    </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Background jobs running (cron)</p>
+                            <p class="mt-0.5 text-sm text-muted">Add the every-minute cron job: php …/artisan schedule:run</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Production database (MySQL)</p>
+                            <p class="mt-0.5 text-sm text-muted">Use the Hostinger MySQL database in .env.</p>                        </div>
+                    </li>
+                            </ul>
+        </section>
+            <section class="card p-5">
+            <h2 class="text-lg font-black">Payments</h2>
+            <ul class="mt-3 divide-y divide-line">
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">ClickPesa selected</p>
+                            <p class="mt-0.5 text-sm text-muted">Set PAYMENT_DRIVER=clickpesa after your merchant account is approved.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">ClickPesa keys entered</p>
+                            <p class="mt-0.5 text-sm text-muted">Add CLICKPESA_CLIENT_ID and CLICKPESA_API_KEY from the ClickPesa dashboard.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Webhook checksum on</p>
+                            <p class="mt-0.5 text-sm text-muted">Enable checksum in ClickPesa and set CLICKPESA_CHECKSUM_KEY.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">A real payment went through</p>
+                            <p class="mt-0.5 text-sm text-muted">Place a TSh 1,000 test order with your own phone.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Payment fee set from your contract</p>
+                            <p class="mt-0.5 text-sm text-muted">Update PRICING_GATEWAY_FEE_BP with the rate ClickPesa gives you (350 = 3.5% is our estimate).</p>                        </div>
+                    </li>
+                            </ul>
+        </section>
+            <section class="card p-5">
+            <h2 class="text-lg font-black">Supplier &amp; prices</h2>
+            <ul class="mt-3 divide-y divide-line">
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">SMM panel connected</p>
+                            <p class="mt-0.5 text-sm text-muted">Admin → Suppliers → Add a supplier (API URL + key).</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Panel has balance</p>
+                            <p class="mt-0.5 text-sm text-muted">Top up your panel balance, then Sync.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Prices synced this week</p>
+                            <p class="mt-0.5 text-sm text-muted">Admin → Suppliers → Sync prices &amp; balance.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Exchange rate set</p>
+                            <p class="mt-0.5 text-sm text-muted">Set SMM_FX_TZS_PER_USD in .env.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Packages linked to the panel</p>
+                            <p class="mt-0.5 text-sm text-muted">0 visible packages are routed to a panel. Link them in Suppliers → Browse catalog.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">No placeholder prices left</p>
+                            <p class="mt-0.5 text-sm text-muted">22 visible packages still use placeholder costs — link them to panel items.</p>                        </div>
+                    </li>
+                            </ul>
+        </section>
+            <section class="card p-5">
+            <h2 class="text-lg font-black">Security &amp; support</h2>
+            <ul class="mt-3 divide-y divide-line">
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Secret admin address</p>
+                            <p class="mt-0.5 text-sm text-muted">Set ADMIN_PATH to something only you know.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-volt text-ink"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>
+</span>
+                        <div class="min-w-0">
+                            <p class="font-semibold text-muted line-through decoration-2">All staff use 2-step</p>
+                                                    </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Emails are sent</p>
+                            <p class="mt-0.5 text-sm text-muted">Set MAIL_MAILER=smtp with your Hostinger mailbox (smtp.hostinger.com, port 465).</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">Alert email set</p>
+                            <p class="mt-0.5 text-sm text-muted">Set DUMABOOST_ALERT_EMAIL to get problem alerts.</p>                        </div>
+                    </li>
+                                    <li class="flex gap-3 py-3">
+                        <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-sunken text-muted ring-2 ring-line"></span>
+                        <div class="min-w-0">
+                            <p class="font-semibold">WhatsApp support number</p>
+                            <p class="mt-0.5 text-sm text-muted">Set DUMABOOST_SUPPORT_WHATSAPP (digits only, e.g. 2557XXXXXXXX).</p>                        </div>
+                    </li>
+                            </ul>
+        </section>
+    
+    <section class="card p-5 xl:col-span-2">
+        <h2 class="text-lg font-black">Paperwork &amp; checks you do</h2>
+        <ul class="mt-3 grid gap-2 md:grid-cols-2">
+                                            <li>
+                    <form method="POST" action="/dumaboost-preview/admin/launch">
+                        <input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><input type="hidden" name="item" value="business">
+                        <button class="flex w-full gap-3 rounded-2xl p-3 text-left transition-colors bg-sunken hover:bg-line">
+                            <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-md bg-surface ring-2 ring-line"></span>
+                            <span><span class="block font-semibold">Register the business (BRELA) and get a TIN</span><span class="block text-sm text-muted">Needed for a merchant payment account and a business bank account.</span></span>
+                        </button>
+                    </form>
+                </li>
+                                            <li>
+                    <form method="POST" action="/dumaboost-preview/admin/launch">
+                        <input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><input type="hidden" name="item" value="bank">
+                        <button class="flex w-full gap-3 rounded-2xl p-3 text-left transition-colors bg-sunken hover:bg-line">
+                            <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-md bg-surface ring-2 ring-line"></span>
+                            <span><span class="block font-semibold">Open a business bank or mobile-money account</span><span class="block text-sm text-muted">Where ClickPesa sends your money.</span></span>
+                        </button>
+                    </form>
+                </li>
+                                            <li>
+                    <form method="POST" action="/dumaboost-preview/admin/launch">
+                        <input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><input type="hidden" name="item" value="domain">
+                        <button class="flex w-full gap-3 rounded-2xl p-3 text-left transition-colors bg-sunken hover:bg-line">
+                            <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-md bg-surface ring-2 ring-line"></span>
+                            <span><span class="block font-semibold">Own the domain (dumaboost.com) and point it to Hostinger</span><span class="block text-sm text-muted">Check your registrar account; follow docs/HOSTINGER_QUICKSTART.md part C.</span></span>
+                        </button>
+                    </form>
+                </li>
+                                            <li>
+                    <form method="POST" action="/dumaboost-preview/admin/launch">
+                        <input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><input type="hidden" name="item" value="legal">
+                        <button class="flex w-full gap-3 rounded-2xl p-3 text-left transition-colors bg-sunken hover:bg-line">
+                            <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-md bg-surface ring-2 ring-line"></span>
+                            <span><span class="block font-semibold">Have a lawyer review Terms, Privacy and Refund pages</span><span class="block text-sm text-muted">Fill in company name, address and TIN on the policy pages.</span></span>
+                        </button>
+                    </form>
+                </li>
+                                            <li>
+                    <form method="POST" action="/dumaboost-preview/admin/launch">
+                        <input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><input type="hidden" name="item" value="pdpc">
+                        <button class="flex w-full gap-3 rounded-2xl p-3 text-left transition-colors bg-sunken hover:bg-line">
+                            <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-md bg-surface ring-2 ring-line"></span>
+                            <span><span class="block font-semibold">Register with the Personal Data Protection Commission (PDPC)</span><span class="block text-sm text-muted">Ask your lawyer whether and when it applies to you.</span></span>
+                        </button>
+                    </form>
+                </li>
+                                            <li>
+                    <form method="POST" action="/dumaboost-preview/admin/launch">
+                        <input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><input type="hidden" name="item" value="backup">
+                        <button class="flex w-full gap-3 rounded-2xl p-3 text-left transition-colors bg-sunken hover:bg-line">
+                            <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-md bg-surface ring-2 ring-line"></span>
+                            <span><span class="block font-semibold">Test a backup restore once</span><span class="block text-sm text-muted">docs/DEPLOYMENT.md §5 — import a backup into a spare database and open the site.</span></span>
+                        </button>
+                    </form>
+                </li>
+                                            <li>
+                    <form method="POST" action="/dumaboost-preview/admin/launch">
+                        <input type="hidden" name="_token" value="vPR8Yx6tEbmrDjDghCT7MP91TppbtXYAbnEpwBe4" autocomplete="off"><input type="hidden" name="item" value="swahili">
+                        <button class="flex w-full gap-3 rounded-2xl p-3 text-left transition-colors bg-sunken hover:bg-line">
+                            <span class="mt-0.5 grid size-6 shrink-0 place-items-center rounded-md bg-surface ring-2 ring-line"></span>
+                            <span><span class="block font-semibold">A Swahili speaker read the /sw pages</span><span class="block text-sm text-muted">Fix anything that sounds off before launch.</span></span>
+                        </button>
+                    </form>
+                </li>
+                    </ul>
+    </section>
+</div>
+    </main>
+</div>
+
+
+</body></html>
