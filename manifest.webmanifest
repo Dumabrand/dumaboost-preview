@@ -4,7 +4,7 @@
   "scope": "/dumaboost-preview/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#FFFFFF",
+  "background_color": "#D4FF3A",
   "theme_color": "#0B0B0F",
   "categories": [
     "business",
@@ -43,16 +43,16 @@
   ],
   "name": "DumaBoost",
   "short_name": "DumaBoost",
-  "lang": "sw",
-  "description": "Matangazo halali ya kidijitali, malipo kwa simu.",
+  "lang": "en",
+  "description": "Honest digital promotion, paid by mobile money.",
   "shortcuts": [
     {
-      "name": "Huduma",
-      "url": "/dumaboost-preview/huduma"
+      "name": "Services",
+      "url": "/dumaboost-preview/services"
     },
     {
-      "name": "Fuatilia oda",
-      "url": "/dumaboost-preview/fuatilia"
+      "name": "Track order",
+      "url": "/dumaboost-preview/track"
     }
   ]
 }

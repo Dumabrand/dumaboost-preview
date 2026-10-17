@@ -1,0 +1,1508 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Profit guide · DumaBoost</title>
+    <link rel="icon" href="/dumaboost-preview/favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="style" href="/dumaboost-preview/build/assets/app-DL_-obBG.css" nonce=""><link rel="stylesheet" href="/dumaboost-preview/build/assets/app-DL_-obBG.css" nonce="">
+<meta name="robots" content="noindex, nofollow">
+<style>#pv-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:84px;z-index:60;display:flex;gap:4px;padding:4px;border-radius:999px;background:#0B0B0F;box-shadow:0 8px 24px rgba(0,0,0,.3);font:600 13px/1 system-ui,sans-serif}
+#pv-bar a{color:#fff;text-decoration:none;padding:9px 14px;border-radius:999px}#pv-bar a.on{background:#D4FF3A;color:#0B0B0F}
+#pv-toast{position:fixed;left:50%;top:76px;transform:translateX(-50%);z-index:61;background:#FF3D7F;color:#fff;padding:10px 16px;border-radius:12px;font:600 14px system-ui,sans-serif;display:none;max-width:90vw;text-align:center}
+@media(min-width:768px){#pv-bar{bottom:20px}}</style>
+<script>
+(function(){var B='/dumaboost-preview';
+document.addEventListener('submit',function(e){var f=e.target,a=f.getAttribute('action')||'';e.preventDefault();e.stopImmediatePropagation();
+ var go=null;if(/\/(oda|order)$/.test(a))go=B+'/demo/lipa/';else if(/jaribio|simulate/.test(a))go=B+'/demo/fuatilia/';else if(/\/admin\/login/.test(a)||/\/admin\/mfa/.test(a))go=B+'/admin/';else if(/fuatilia$|track$/.test(a))go=B+'/demo/fuatilia/';
+ if(go){location.href=go;return;}var t=document.getElementById('pv-toast');t.textContent='Preview only — this button works on the real site.';t.style.display='block';setTimeout(function(){t.style.display='none'},2500);},true);
+document.addEventListener('DOMContentLoaded',function(){var admin=location.pathname.indexOf(B+'/admin')===0;var bar=document.createElement('div');bar.id='pv-bar';
+ bar.innerHTML='<a href="'+B+'/" class="'+(admin?'':'on')+'">Customer</a><a href="'+B+'/admin/" class="'+(admin?'on':'')+'">Admin</a>';document.body.appendChild(bar);
+ var t=document.createElement('div');t.id='pv-toast';document.body.appendChild(t);});
+})();
+</script></head>
+<body class="min-h-dvh bg-sunken text-fg">
+
+<div class="lg:grid lg:min-h-dvh lg:grid-cols-[16rem_1fr]">
+    <aside class="bg-ink text-white lg:sticky lg:top-0 lg:h-dvh lg:overflow-y-auto">
+        <div class="flex items-center justify-between px-5 py-4">
+            <a href="/dumaboost-preview/admin"><span class="inline-flex items-center gap-2 h-8">
+    <svg viewBox="0 0 64 64" class="h-full w-auto shrink-0" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#D4FF3A"></rect>
+        <path d="M38 4 13 37h15.5l-5.5 24 28-36H35.5l7-21z" fill="#FF3D7F" transform="translate(3.5 2.5)"></path>
+        <path d="M38 4 13 37h15.5l-5.5 24 28-36H35.5l7-21z" fill="#0B0B0F"></path>
+    </svg>
+    <span class="font-display text-[1.2rem] leading-none font-black tracking-tight">duma<span class="text-pink">boost</span></span>
+</span>
+</a>
+            <span class="rounded-full bg-white/10 px-2 py-0.5 text-[0.7rem] font-bold tracking-wider uppercase">Admin</span>
+        </div>
+        <nav class="flex gap-1 overflow-x-auto px-3 pb-3 text-[0.95rem] lg:block lg:space-y-5 lg:overflow-visible lg:pb-6" aria-label="Admin">
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">Overview</p>
+                                                                        <a href="/dumaboost-preview/admin" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1v-9.5Z"></path></svg>
+Dashboard</a>
+                                                                                                <a href="/dumaboost-preview/admin/profit" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors bg-volt text-ink"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
+Profit guide</a>
+                                                            </div>
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">Sales</p>
+                                                                        <a href="/dumaboost-preview/admin/orders" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="4" y="4" width="6.5" height="6.5" rx="1.5"></rect><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"></rect><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"></rect><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"></rect></svg>
+Orders</a>
+                                                                                                <a href="/dumaboost-preview/admin/payments" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="3" y="5.5" width="18" height="13" rx="2"></rect><path d="M3 10h18M7 15h3"></path></svg>
+Payments</a>
+                                                                                                <a href="/dumaboost-preview/admin/refunds" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+Refunds</a>
+                                                                                                <a href="/dumaboost-preview/admin/tickets" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 5h16v11H9l-5 4V5Z"></path></svg>
+Support</a>
+                                                            </div>
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">Catalog</p>
+                                                                        <a href="/dumaboost-preview/admin/services" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9Z"></path><circle cx="8" cy="8" r="1.5"></circle></svg>
+Services &amp; prices</a>
+                                                                                                <a href="/dumaboost-preview/admin/suppliers" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 20a6.5 6.5 0 0 0-3-5.5"></path></svg>
+Suppliers</a>
+                                                            </div>
+                            <div class="contents lg:block">
+                    <p class="hidden px-3 pb-1.5 text-[0.7rem] font-bold tracking-[0.14em] text-white/40 uppercase lg:block">System</p>
+                                                                        <a href="/dumaboost-preview/admin/webhooks" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.7 3.5 5.7 3.5 9s-1 6.3-3.5 9c-2.5-2.7-3.5-5.7-3.5-9s1-6.3 3.5-9Z"></path></svg>
+Webhook log</a>
+                                                                                                <a href="/dumaboost-preview/admin/security" class="flex shrink-0 items-center gap-3 rounded-xl px-3 py-2.5 font-semibold transition-colors text-white/75 hover:bg-white/10 hover:text-white"><svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6L12 3Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+Security</a>
+                                                            </div>
+                    </nav>
+        <div class="hidden border-t border-white/10 px-5 py-4 text-sm lg:block">
+            <p class="truncate font-semibold">owner@example.test</p>
+            <p class="text-white/50">Super Admin</p>
+            <form method="POST" action="/dumaboost-preview/admin/logout" class="mt-3"><input type="hidden" name="_token" value="NOHTrLDUO0uo6vXMyVWMLFQf5ZanCqrgExMJqpRR" autocomplete="off"><button class="flex items-center gap-2 font-bold text-volt"><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="5" y="10.5" width="14" height="10" rx="2"></rect><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"></path></svg>
+Sign out</button></form>
+        </div>
+    </aside>
+    <main class="min-w-0 p-4 md:p-8">
+        <div class="mb-5 flex flex-wrap items-center gap-2">
+                            <span class="pill bg-warn-bg text-warn">TEST MODE · payments simulated</span>
+                        <span class="pill pill-neutral"><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 3 4.5 6v5.5c0 4.5 3.2 8.2 7.5 9.5 4.3-1.3 7.5-5 7.5-9.5V6L12 3Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+2-step verified · auto sign-out after 30 min idle</span>
+            <form method="POST" action="/dumaboost-preview/admin/logout" class="ml-auto lg:hidden"><input type="hidden" name="_token" value="NOHTrLDUO0uo6vXMyVWMLFQf5ZanCqrgExMJqpRR" autocomplete="off"><button class="btn btn-ghost !min-h-9 !px-4 !py-1 text-sm">Sign out</button></form>
+        </div>
+                        
+<h1 class="text-3xl font-black">How much do I make?</h1>
+<p class="mt-2 max-w-2xl text-muted">Every number below comes from the same pricing engine checkout uses, so it is exactly what customers would pay today.</p>
+
+
+<section class="card mt-6 p-5 md:p-6">
+    <h2 class="text-lg font-black">On every order</h2>
+    <div class="mt-4 grid items-stretch gap-2 text-center sm:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr]">
+        <div class="rounded-2xl bg-ink p-4 text-white"><p class="text-sm text-white/60">Customer pays</p><p class="font-display mt-1 font-black">Price</p></div>
+        <div class="grid place-items-center text-2xl font-black text-muted">−</div>
+        <div class="rounded-2xl bg-sunken p-4"><p class="text-sm text-muted">Panel / supplier</p><p class="font-display mt-1 font-black">Cost</p></div>
+        <div class="grid place-items-center text-2xl font-black text-muted">−</div>
+        <div class="rounded-2xl bg-sunken p-4"><p class="text-sm text-muted">Payment company</p><p class="font-display mt-1 font-black">≈ 3.5% fee</p></div>
+        <div class="grid place-items-center text-2xl font-black text-muted">=</div>
+        <div class="rounded-2xl bg-volt p-4 text-ink ring-2 ring-ink"><p class="text-sm">You keep</p><p class="font-display mt-1 font-black">Profit</p></div>
+    </div>
+    <ul class="mt-5 grid gap-2 text-sm text-muted md:grid-cols-3">
+        <li class="rounded-xl bg-sunken p-3"><strong class="text-fg">Price</strong> = cost + your markup %, rounded up. Change markup per service in <a class="font-semibold text-link underline" href="/dumaboost-preview/admin/services">Services &amp; prices</a>.</li>
+        <li class="rounded-xl bg-sunken p-3"><strong class="text-fg">Minimum profit</strong> per order is protected: if a price would earn less, it is raised automatically (and coupons can't go below it).</li>
+        <li class="rounded-xl bg-sunken p-3"><strong class="text-fg">Fee is an estimate</strong> (3.5%) until your payment company confirms its rate. Update <code>PRICING_GATEWAY_FEE_BP</code> when you know it.</li>
+    </ul>
+</section>
+
+<div class="mt-6 grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+    
+    <section class="card p-5 md:p-6">
+        <h2 class="text-lg font-black">Calculator</h2>
+        <form method="GET" class="mt-4 grid gap-3 sm:grid-cols-2">
+            <div class="sm:col-span-2">
+                <label class="field-label" for="service">Service</label>
+                <select id="service" name="service" class="input">
+                                            <option value="36">Audiomack plays</option>
+                                            <option value="33">Boomplay followers</option>
+                                            <option value="34">Boomplay plays</option>
+                                            <option value="28">Facebook page followers</option>
+                                            <option value="2">Facebook &amp; Instagram boosted post</option>
+                                            <option value="16">Instagram followers</option>
+                                            <option value="17">Instagram likes</option>
+                                            <option value="18">Instagram comments (you write them)</option>
+                                            <option value="20">Instagram saves</option>
+                                            <option value="21">Instagram shares</option>
+                                            <option value="22">Instagram Reels views</option>
+                                            <option value="3">Short video edit</option>
+                                            <option value="4">Swahili &amp; English subtitles</option>
+                                            <option value="31">Spotify followers</option>
+                                            <option value="32">Spotify plays</option>
+                                            <option value="1">TikTok Promote campaign</option>
+                                            <option value="9" selected="">TikTok followers</option>
+                                            <option value="10">TikTok likes</option>
+                                            <option value="11">TikTok comments (you write them)</option>
+                                            <option value="12">TikTok reposts</option>
+                                            <option value="13">TikTok saves</option>
+                                            <option value="14">TikTok shares</option>
+                                            <option value="15">TikTok views</option>
+                                            <option value="23">YouTube subscribers</option>
+                                            <option value="24">YouTube likes</option>
+                                            <option value="27">YouTube views</option>
+                                    </select>
+            </div>
+            <div><label class="field-label" for="qty">Quantity</label><input id="qty" name="qty" type="number" min="1" class="input tabular" value="1000"></div>
+            <div><label class="field-label" for="markup">Markup % <span class="font-normal text-muted">(try it — not saved)</span></label><input id="markup" name="markup" type="number" min="0" max="1000" class="input tabular" value="80"></div>
+            <div><label class="field-label" for="per_day">Orders like this per day</label><input id="per_day" name="per_day" type="number" min="0" class="input tabular" value="20"></div>
+            <div class="flex items-end"><button class="btn btn-dark w-full">Calculate</button></div>
+        </form>
+
+                                <div class="mt-6">
+                <p class="text-sm font-semibold text-muted">TikTok followers · 1,000</p>
+                <p class="font-display tabular mt-1 text-4xl font-black">TSh 4,422 <span class="text-base font-bold text-muted">profit / order</span></p>
+                                <svg viewBox="0 0 100 6" preserveAspectRatio="none" class="mt-4 h-5 w-full overflow-hidden rounded-full" role="img" aria-label="Price split: supplier TSh 6,000, fee TSh 378, profit TSh 4,422">
+                    <rect x="0" y="0" width="55.6" height="6" fill="var(--fg)" opacity=".75"></rect>
+                    <rect x="55.6" y="0" width="3.5" height="6" fill="#3DD5FF"></rect>
+                    <rect x="59.1" y="0" width="40.9" height="6" fill="#D4FF3A"></rect>
+                </svg>
+                <dl class="tabular mt-4 grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
+                    <div class="rounded-xl bg-sunken p-3"><dt class="text-muted">Customer pays</dt><dd class="font-bold">TSh 10,800</dd></div>
+                    <div class="rounded-xl bg-sunken p-3"><dt class="flex items-center gap-1.5 text-muted"><span class="size-2 rounded-full bg-fg/75"></span>Supplier</dt><dd class="font-bold">TSh 6,000</dd></div>
+                    <div class="rounded-xl bg-sunken p-3"><dt class="flex items-center gap-1.5 text-muted"><span class="size-2 rounded-full bg-sky"></span>Payment fee</dt><dd class="font-bold">TSh 378</dd></div>
+                    <div class="rounded-xl bg-volt p-3 text-ink"><dt class="flex items-center gap-1.5"><span class="size-2 rounded-full bg-ink"></span>You keep</dt><dd class="font-bold">TSh 4,422 · 41%</dd></div>
+                </dl>
+                                <div class="mt-5 rounded-2xl bg-ink p-5 text-white">
+                    <p class="text-sm text-white/60">If you sell 20 of these a day</p>
+                    <div class="tabular mt-2 grid grid-cols-3 gap-3">
+                        <div><p class="text-xs text-white/50">Per day</p><p class="font-display text-lg font-black">TSh 88,440</p></div>
+                        <div><p class="text-xs text-white/50">Per week</p><p class="font-display text-lg font-black">TSh 619,080</p></div>
+                        <div><p class="text-xs text-white/50">Per month</p><p class="font-display text-lg font-black text-volt">TSh 2,653,200</p></div>
+                    </div>
+                    <p class="mt-3 text-xs text-white/50">An illustration, not a forecast — real sales depend on marketing, competition and refunds.</p>
+                </div>
+            </div>
+            </section>
+
+    
+    <section class="space-y-6">
+        <div class="card p-5 md:p-6">
+            <h2 class="text-lg font-black">Last 30 days — real orders</h2>
+            <dl class="tabular mt-4 grid grid-cols-2 gap-3">
+                <div class="rounded-xl bg-sunken p-3"><dt class="text-sm text-muted">Paid orders</dt><dd class="font-display text-xl font-black">7</dd></div>
+                <div class="rounded-xl bg-sunken p-3"><dt class="text-sm text-muted">Sales</dt><dd class="font-display text-xl font-black">TSh 121,200</dd></div>
+                <div class="rounded-xl bg-volt p-3 text-ink"><dt class="text-sm">Est. profit</dt><dd class="font-display text-xl font-black">TSh 44,958</dd></div>
+                <div class="rounded-xl bg-sunken p-3"><dt class="text-sm text-muted">Avg profit / order</dt><dd class="font-display text-xl font-black">TSh 6,422</dd></div>
+            </dl>
+            <p class="mt-3 text-xs text-muted">Estimated at the moment of sale. Refunds and actual payment fees adjust the final figure in the ledger.</p>
+        </div>
+        <div class="card p-5 md:p-6">
+            <h2 class="text-lg font-black">Ways to earn more</h2>
+            <ul class="mt-3 space-y-2 text-sm">
+                <li class="flex gap-2"><span class="mt-1 size-2 shrink-0 rounded-full bg-pink"></span>Raise markup a little on your best sellers — small packages carry the highest % margin.</li>
+                <li class="flex gap-2"><span class="mt-1 size-2 shrink-0 rounded-full bg-pink"></span>Set a minimum profit per order (e.g. TSh 300) so tiny orders are never worth less than the effort.</li>
+                <li class="flex gap-2"><span class="mt-1 size-2 shrink-0 rounded-full bg-pink"></span>Re-sync supplier prices weekly; if the panel gets cheaper, your margin grows.</li>
+                <li class="flex gap-2"><span class="mt-1 size-2 shrink-0 rounded-full bg-pink"></span>Keep refunds low: pick panels with refill and low drop rates.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+
+<section class="card mt-6 p-5 md:p-6">
+    <h2 class="text-lg font-black">Profit on every package</h2>
+    <p class="mt-1 text-sm text-muted">Visible services, at each amount customers can tap. Sorted by profit per order.</p>
+    <div class="mt-4 overflow-x-auto">
+        <table class="tabular w-full min-w-[640px] text-left text-sm">
+            <thead class="text-xs text-muted uppercase"><tr><th class="py-2 pr-3">Service</th><th class="pr-3">Amount</th><th class="pr-3 text-right">Price</th><th class="pr-3 text-right">Supplier</th><th class="pr-3 text-right">Fee</th><th class="pr-3 text-right">Profit</th><th class="text-right">Margin</th></tr></thead>
+            <tbody class="divide-y divide-line">
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=23&amp;qty=10000">YouTube subscribers</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 720,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 400,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 25,200</td>
+                        <td class="pr-3 text-right font-bold">TSh 294,800</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=23&amp;qty=5000">YouTube subscribers</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 360,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 200,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 12,600</td>
+                        <td class="pr-3 text-right font-bold">TSh 147,400</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=36&amp;qty=50000">Audiomack plays</a></td>
+                        <td class="pr-3">50,000</td>
+                        <td class="pr-3 text-right">TSh 270,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 150,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 9,450</td>
+                        <td class="pr-3 text-right font-bold">TSh 110,550</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=34&amp;qty=50000">Boomplay plays</a></td>
+                        <td class="pr-3">50,000</td>
+                        <td class="pr-3 text-right">TSh 270,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 150,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 9,450</td>
+                        <td class="pr-3 text-right font-bold">TSh 110,550</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=32&amp;qty=50000">Spotify plays</a></td>
+                        <td class="pr-3">50,000</td>
+                        <td class="pr-3 text-right">TSh 225,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 125,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,875</td>
+                        <td class="pr-3 text-right font-bold">TSh 92,125</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=23&amp;qty=2500">YouTube subscribers</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 180,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 100,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 6,300</td>
+                        <td class="pr-3 text-right font-bold">TSh 73,700</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=27&amp;qty=25000">YouTube views</a></td>
+                        <td class="pr-3">25,000</td>
+                        <td class="pr-3 text-right">TSh 180,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 100,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 6,300</td>
+                        <td class="pr-3 text-right font-bold">TSh 73,700</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=36&amp;qty=25000">Audiomack plays</a></td>
+                        <td class="pr-3">25,000</td>
+                        <td class="pr-3 text-right">TSh 135,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 75,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,725</td>
+                        <td class="pr-3 text-right font-bold">TSh 55,275</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=34&amp;qty=25000">Boomplay plays</a></td>
+                        <td class="pr-3">25,000</td>
+                        <td class="pr-3 text-right">TSh 135,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 75,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,725</td>
+                        <td class="pr-3 text-right font-bold">TSh 55,275</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=4&amp;qty=25">Swahili &amp; English subtitles</a></td>
+                        <td class="pr-3">25</td>
+                        <td class="pr-3 text-right">TSh 160,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 100,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 5,600</td>
+                        <td class="pr-3 text-right font-bold">TSh 54,400</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=6&amp;qty=0">Creator shoutout</a></td>
+                        <td class="pr-3">Micro creator · 3 posts</td>
+                        <td class="pr-3 text-right">TSh 152,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 95,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 5,320</td>
+                        <td class="pr-3 text-right font-bold">TSh 51,680</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=16&amp;qty=10000">Instagram followers</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 126,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 70,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,410</td>
+                        <td class="pr-3 text-right font-bold">TSh 51,590</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=32&amp;qty=25000">Spotify plays</a></td>
+                        <td class="pr-3">25,000</td>
+                        <td class="pr-3 text-right">TSh 112,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 62,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,938</td>
+                        <td class="pr-3 text-right font-bold">TSh 46,062</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=33&amp;qty=10000">Boomplay followers</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 108,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 60,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,780</td>
+                        <td class="pr-3 text-right font-bold">TSh 44,220</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=28&amp;qty=10000">Facebook page followers</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 108,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 60,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,780</td>
+                        <td class="pr-3 text-right font-bold">TSh 44,220</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=9&amp;qty=10000">TikTok followers</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 108,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 60,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,780</td>
+                        <td class="pr-3 text-right font-bold">TSh 44,220</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=3&amp;qty=10">Short video edit</a></td>
+                        <td class="pr-3">10</td>
+                        <td class="pr-3 text-right">TSh 128,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 80,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,480</td>
+                        <td class="pr-3 text-right font-bold">TSh 43,520</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=31&amp;qty=10000">Spotify followers</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 72,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 40,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,520</td>
+                        <td class="pr-3 text-right font-bold">TSh 29,480</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=23&amp;qty=1000">YouTube subscribers</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 72,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 40,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,520</td>
+                        <td class="pr-3 text-right font-bold">TSh 29,480</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=24&amp;qty=10000">YouTube likes</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 72,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 40,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,520</td>
+                        <td class="pr-3 text-right font-bold">TSh 29,480</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=27&amp;qty=10000">YouTube views</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 72,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 40,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,520</td>
+                        <td class="pr-3 text-right font-bold">TSh 29,480</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=16&amp;qty=5000">Instagram followers</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 63,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 35,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,205</td>
+                        <td class="pr-3 text-right font-bold">TSh 25,795</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=36&amp;qty=10000">Audiomack plays</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 54,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 30,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,890</td>
+                        <td class="pr-3 text-right font-bold">TSh 22,110</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=33&amp;qty=5000">Boomplay followers</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 54,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 30,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,890</td>
+                        <td class="pr-3 text-right font-bold">TSh 22,110</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=34&amp;qty=10000">Boomplay plays</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 54,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 30,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,890</td>
+                        <td class="pr-3 text-right font-bold">TSh 22,110</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=28&amp;qty=5000">Facebook page followers</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 54,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 30,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,890</td>
+                        <td class="pr-3 text-right font-bold">TSh 22,110</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=9&amp;qty=5000">TikTok followers</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 54,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 30,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,890</td>
+                        <td class="pr-3 text-right font-bold">TSh 22,110</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=12&amp;qty=10000">TikTok reposts</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 54,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 30,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,890</td>
+                        <td class="pr-3 text-right font-bold">TSh 22,110</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=3&amp;qty=5">Short video edit</a></td>
+                        <td class="pr-3">5</td>
+                        <td class="pr-3 text-right">TSh 64,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 40,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,240</td>
+                        <td class="pr-3 text-right font-bold">TSh 21,760</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=4&amp;qty=10">Swahili &amp; English subtitles</a></td>
+                        <td class="pr-3">10</td>
+                        <td class="pr-3 text-right">TSh 64,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 40,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,240</td>
+                        <td class="pr-3 text-right font-bold">TSh 21,760</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=6&amp;qty=0">Creator shoutout</a></td>
+                        <td class="pr-3">Micro creator · 1 post</td>
+                        <td class="pr-3 text-right">TSh 56,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 35,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,960</td>
+                        <td class="pr-3 text-right font-bold">TSh 19,040</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=32&amp;qty=10000">Spotify plays</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 45,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 25,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,575</td>
+                        <td class="pr-3 text-right font-bold">TSh 18,425</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=5&amp;qty=12">Thumbnails &amp; cover designs</a></td>
+                        <td class="pr-3">12 designs</td>
+                        <td class="pr-3 text-right">TSh 45,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 28,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,575</td>
+                        <td class="pr-3 text-right font-bold">TSh 15,425</td>
+                        <td class="text-right"><span class="pill pill-success">34.2%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=20&amp;qty=10000">Instagram saves</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=21&amp;qty=10000">Instagram shares</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=31&amp;qty=5000">Spotify followers</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=13&amp;qty=10000">TikTok saves</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=14&amp;qty=10000">TikTok shares</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=23&amp;qty=500">YouTube subscribers</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=24&amp;qty=5000">YouTube likes</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=27&amp;qty=5000">YouTube views</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 36,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,260</td>
+                        <td class="pr-3 text-right font-bold">TSh 14,740</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=3&amp;qty=3">Short video edit</a></td>
+                        <td class="pr-3">3</td>
+                        <td class="pr-3 text-right">TSh 38,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 24,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,348</td>
+                        <td class="pr-3 text-right font-bold">TSh 13,152</td>
+                        <td class="text-right"><span class="pill pill-success">34.1%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=16&amp;qty=2500">Instagram followers</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 31,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 17,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,103</td>
+                        <td class="pr-3 text-right font-bold">TSh 12,897</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=36&amp;qty=5000">Audiomack plays</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=33&amp;qty=2500">Boomplay followers</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=34&amp;qty=5000">Boomplay plays</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=28&amp;qty=2500">Facebook page followers</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=17&amp;qty=10000">Instagram likes</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=22&amp;qty=50000">Instagram Reels views</a></td>
+                        <td class="pr-3">50,000</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=9&amp;qty=2500">TikTok followers</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=10&amp;qty=10000">TikTok likes</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=12&amp;qty=5000">TikTok reposts</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=15&amp;qty=50000">TikTok views</a></td>
+                        <td class="pr-3">50,000</td>
+                        <td class="pr-3 text-right">TSh 27,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 945</td>
+                        <td class="pr-3 text-right font-bold">TSh 11,055</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=4&amp;qty=5">Swahili &amp; English subtitles</a></td>
+                        <td class="pr-3">5</td>
+                        <td class="pr-3 text-right">TSh 32,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,120</td>
+                        <td class="pr-3 text-right font-bold">TSh 10,880</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=32&amp;qty=5000">Spotify plays</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 22,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 12,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 788</td>
+                        <td class="pr-3 text-right font-bold">TSh 9,212</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=3&amp;qty=2">Short video edit</a></td>
+                        <td class="pr-3">2</td>
+                        <td class="pr-3 text-right">TSh 26,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 16,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 910</td>
+                        <td class="pr-3 text-right font-bold">TSh 9,090</td>
+                        <td class="text-right"><span class="pill pill-success">34.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=5&amp;qty=6">Thumbnails &amp; cover designs</a></td>
+                        <td class="pr-3">6 designs</td>
+                        <td class="pr-3 text-right">TSh 26,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 16,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 910</td>
+                        <td class="pr-3 text-right font-bold">TSh 9,090</td>
+                        <td class="text-right"><span class="pill pill-success">34.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=7&amp;qty=0">Profile audit &amp; 30-day content plan</a></td>
+                        <td class="pr-3">One account</td>
+                        <td class="pr-3 text-right">TSh 24,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 840</td>
+                        <td class="pr-3 text-right font-bold">TSh 8,160</td>
+                        <td class="text-right"><span class="pill pill-success">34%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=20&amp;qty=5000">Instagram saves</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=21&amp;qty=5000">Instagram shares</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=31&amp;qty=2500">Spotify followers</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=13&amp;qty=5000">TikTok saves</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=14&amp;qty=5000">TikTok shares</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=23&amp;qty=250">YouTube subscribers</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=24&amp;qty=2500">YouTube likes</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=27&amp;qty=2500">YouTube views</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 18,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 10,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 630</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,370</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=1&amp;qty=20000">TikTok Promote campaign</a></td>
+                        <td class="pr-3">20,000</td>
+                        <td class="pr-3 text-right">TSh 28,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 20,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 980</td>
+                        <td class="pr-3 text-right font-bold">TSh 7,020</td>
+                        <td class="text-right"><span class="pill pill-warning">25%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=4&amp;qty=3">Swahili &amp; English subtitles</a></td>
+                        <td class="pr-3">3</td>
+                        <td class="pr-3 text-right">TSh 19,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 12,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 683</td>
+                        <td class="pr-3 text-right font-bold">TSh 6,817</td>
+                        <td class="text-right"><span class="pill pill-success">34.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=8&amp;qty=0">WhatsApp Business setup</a></td>
+                        <td class="pr-3">Up to 20 products</td>
+                        <td class="pr-3 text-right">TSh 19,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 12,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 683</td>
+                        <td class="pr-3 text-right font-bold">TSh 6,817</td>
+                        <td class="text-right"><span class="pill pill-success">34.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=2&amp;qty=15000">Facebook &amp; Instagram boosted post</a></td>
+                        <td class="pr-3">15,000</td>
+                        <td class="pr-3 text-right">TSh 22,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 15,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 788</td>
+                        <td class="pr-3 text-right font-bold">TSh 6,712</td>
+                        <td class="text-right"><span class="pill pill-warning">29.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=36&amp;qty=2500">Audiomack plays</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 13,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 473</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,527</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=34&amp;qty=2500">Boomplay plays</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 13,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 473</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,527</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=17&amp;qty=5000">Instagram likes</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 13,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 473</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,527</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=22&amp;qty=25000">Instagram Reels views</a></td>
+                        <td class="pr-3">25,000</td>
+                        <td class="pr-3 text-right">TSh 13,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 473</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,527</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=10&amp;qty=5000">TikTok likes</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 13,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 473</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,527</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=12&amp;qty=2500">TikTok reposts</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 13,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 473</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,527</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=15&amp;qty=25000">TikTok views</a></td>
+                        <td class="pr-3">25,000</td>
+                        <td class="pr-3 text-right">TSh 13,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 473</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,527</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=16&amp;qty=1000">Instagram followers</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 12,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 7,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 441</td>
+                        <td class="pr-3 text-right font-bold">TSh 5,159</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=5&amp;qty=3">Thumbnails &amp; cover designs</a></td>
+                        <td class="pr-3">3 designs</td>
+                        <td class="pr-3 text-right">TSh 14,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 9,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 508</td>
+                        <td class="pr-3 text-right font-bold">TSh 4,992</td>
+                        <td class="text-right"><span class="pill pill-success">34.4%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=32&amp;qty=2500">Spotify plays</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 11,250</td>
+                        <td class="pr-3 text-right text-muted">TSh 6,250</td>
+                        <td class="pr-3 text-right text-muted">TSh 394</td>
+                        <td class="pr-3 text-right font-bold">TSh 4,606</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=3&amp;qty=1">Short video edit</a></td>
+                        <td class="pr-3">1</td>
+                        <td class="pr-3 text-right">TSh 13,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 8,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 455</td>
+                        <td class="pr-3 text-right font-bold">TSh 4,545</td>
+                        <td class="text-right"><span class="pill pill-success">34.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=4&amp;qty=2">Swahili &amp; English subtitles</a></td>
+                        <td class="pr-3">2</td>
+                        <td class="pr-3 text-right">TSh 13,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 8,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 455</td>
+                        <td class="pr-3 text-right font-bold">TSh 4,545</td>
+                        <td class="text-right"><span class="pill pill-success">34.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=33&amp;qty=1000">Boomplay followers</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 10,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 6,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 378</td>
+                        <td class="pr-3 text-right font-bold">TSh 4,422</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=28&amp;qty=1000">Facebook page followers</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 10,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 6,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 378</td>
+                        <td class="pr-3 text-right font-bold">TSh 4,422</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=9&amp;qty=1000">TikTok followers</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 10,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 6,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 378</td>
+                        <td class="pr-3 text-right font-bold">TSh 4,422</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=20&amp;qty=2500">Instagram saves</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 9,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 5,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 315</td>
+                        <td class="pr-3 text-right font-bold">TSh 3,685</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=21&amp;qty=2500">Instagram shares</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 9,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 5,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 315</td>
+                        <td class="pr-3 text-right font-bold">TSh 3,685</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=13&amp;qty=2500">TikTok saves</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 9,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 5,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 315</td>
+                        <td class="pr-3 text-right font-bold">TSh 3,685</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=14&amp;qty=2500">TikTok shares</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 9,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 5,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 315</td>
+                        <td class="pr-3 text-right font-bold">TSh 3,685</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=31&amp;qty=1000">Spotify followers</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 7,200</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 252</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,948</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=24&amp;qty=1000">YouTube likes</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 7,200</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 252</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,948</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=27&amp;qty=1000">YouTube views</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 7,200</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 252</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,948</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=17&amp;qty=2500">Instagram likes</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 6,750</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,750</td>
+                        <td class="pr-3 text-right text-muted">TSh 237</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,763</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=10&amp;qty=2500">TikTok likes</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 6,750</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,750</td>
+                        <td class="pr-3 text-right text-muted">TSh 237</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,763</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=16&amp;qty=500">Instagram followers</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 6,300</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 221</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,579</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=4&amp;qty=1">Swahili &amp; English subtitles</a></td>
+                        <td class="pr-3">1</td>
+                        <td class="pr-3 text-right">TSh 6,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 4,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 228</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,272</td>
+                        <td class="text-right"><span class="pill pill-success">34.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=36&amp;qty=1000">Audiomack plays</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=33&amp;qty=500">Boomplay followers</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=34&amp;qty=1000">Boomplay plays</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=28&amp;qty=500">Facebook page followers</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=22&amp;qty=10000">Instagram Reels views</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=9&amp;qty=500">TikTok followers</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=12&amp;qty=1000">TikTok reposts</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=15&amp;qty=10000">TikTok views</a></td>
+                        <td class="pr-3">10,000</td>
+                        <td class="pr-3 text-right">TSh 5,400</td>
+                        <td class="pr-3 text-right text-muted">TSh 3,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 189</td>
+                        <td class="pr-3 text-right font-bold">TSh 2,211</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=32&amp;qty=1000">Spotify plays</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 4,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 158</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,842</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=20&amp;qty=1000">Instagram saves</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 3,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 126</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,474</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=21&amp;qty=1000">Instagram shares</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 3,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 126</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,474</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=31&amp;qty=500">Spotify followers</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 3,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 126</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,474</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=13&amp;qty=1000">TikTok saves</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 3,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 126</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,474</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=14&amp;qty=1000">TikTok shares</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 3,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 126</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,474</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=24&amp;qty=500">YouTube likes</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 3,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 126</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,474</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=27&amp;qty=500">YouTube views</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 3,600</td>
+                        <td class="pr-3 text-right text-muted">TSh 2,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 126</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,474</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=16&amp;qty=250">Instagram followers</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 3,150</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,750</td>
+                        <td class="pr-3 text-right text-muted">TSh 111</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,289</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=33&amp;qty=250">Boomplay followers</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=28&amp;qty=250">Facebook page followers</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=17&amp;qty=1000">Instagram likes</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=22&amp;qty=5000">Instagram Reels views</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=9&amp;qty=250">TikTok followers</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=10&amp;qty=1000">TikTok likes</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=12&amp;qty=500">TikTok reposts</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=15&amp;qty=5000">TikTok views</a></td>
+                        <td class="pr-3">5,000</td>
+                        <td class="pr-3 text-right">TSh 2,700</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,500</td>
+                        <td class="pr-3 text-right text-muted">TSh 95</td>
+                        <td class="pr-3 text-right font-bold">TSh 1,105</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=20&amp;qty=500">Instagram saves</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 1,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 63</td>
+                        <td class="pr-3 text-right font-bold">TSh 737</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=21&amp;qty=500">Instagram shares</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 1,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 63</td>
+                        <td class="pr-3 text-right font-bold">TSh 737</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=31&amp;qty=250">Spotify followers</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 1,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 63</td>
+                        <td class="pr-3 text-right font-bold">TSh 737</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=13&amp;qty=500">TikTok saves</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 1,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 63</td>
+                        <td class="pr-3 text-right font-bold">TSh 737</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=14&amp;qty=500">TikTok shares</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 1,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 63</td>
+                        <td class="pr-3 text-right font-bold">TSh 737</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=24&amp;qty=250">YouTube likes</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 1,800</td>
+                        <td class="pr-3 text-right text-muted">TSh 1,000</td>
+                        <td class="pr-3 text-right text-muted">TSh 63</td>
+                        <td class="pr-3 text-right font-bold">TSh 737</td>
+                        <td class="text-right"><span class="pill pill-success">40.9%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=17&amp;qty=500">Instagram likes</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 1,350</td>
+                        <td class="pr-3 text-right text-muted">TSh 750</td>
+                        <td class="pr-3 text-right text-muted">TSh 48</td>
+                        <td class="pr-3 text-right font-bold">TSh 552</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=22&amp;qty=2500">Instagram Reels views</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 1,350</td>
+                        <td class="pr-3 text-right text-muted">TSh 750</td>
+                        <td class="pr-3 text-right text-muted">TSh 48</td>
+                        <td class="pr-3 text-right font-bold">TSh 552</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=10&amp;qty=500">TikTok likes</a></td>
+                        <td class="pr-3">500</td>
+                        <td class="pr-3 text-right">TSh 1,350</td>
+                        <td class="pr-3 text-right text-muted">TSh 750</td>
+                        <td class="pr-3 text-right text-muted">TSh 48</td>
+                        <td class="pr-3 text-right font-bold">TSh 552</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=12&amp;qty=250">TikTok reposts</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 1,350</td>
+                        <td class="pr-3 text-right text-muted">TSh 750</td>
+                        <td class="pr-3 text-right text-muted">TSh 48</td>
+                        <td class="pr-3 text-right font-bold">TSh 552</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=15&amp;qty=2500">TikTok views</a></td>
+                        <td class="pr-3">2,500</td>
+                        <td class="pr-3 text-right">TSh 1,350</td>
+                        <td class="pr-3 text-right text-muted">TSh 750</td>
+                        <td class="pr-3 text-right text-muted">TSh 48</td>
+                        <td class="pr-3 text-right font-bold">TSh 552</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=20&amp;qty=250">Instagram saves</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 900</td>
+                        <td class="pr-3 text-right text-muted">TSh 500</td>
+                        <td class="pr-3 text-right text-muted">TSh 32</td>
+                        <td class="pr-3 text-right font-bold">TSh 368</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=21&amp;qty=250">Instagram shares</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 900</td>
+                        <td class="pr-3 text-right text-muted">TSh 500</td>
+                        <td class="pr-3 text-right text-muted">TSh 32</td>
+                        <td class="pr-3 text-right font-bold">TSh 368</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=13&amp;qty=250">TikTok saves</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 900</td>
+                        <td class="pr-3 text-right text-muted">TSh 500</td>
+                        <td class="pr-3 text-right text-muted">TSh 32</td>
+                        <td class="pr-3 text-right font-bold">TSh 368</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=14&amp;qty=250">TikTok shares</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 900</td>
+                        <td class="pr-3 text-right text-muted">TSh 500</td>
+                        <td class="pr-3 text-right text-muted">TSh 32</td>
+                        <td class="pr-3 text-right font-bold">TSh 368</td>
+                        <td class="text-right"><span class="pill pill-success">40.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=22&amp;qty=1000">Instagram Reels views</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 650</td>
+                        <td class="pr-3 text-right text-muted">TSh 300</td>
+                        <td class="pr-3 text-right text-muted">TSh 23</td>
+                        <td class="pr-3 text-right font-bold">TSh 327</td>
+                        <td class="text-right"><span class="pill pill-success">50.3%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=15&amp;qty=1000">TikTok views</a></td>
+                        <td class="pr-3">1,000</td>
+                        <td class="pr-3 text-right">TSh 650</td>
+                        <td class="pr-3 text-right text-muted">TSh 300</td>
+                        <td class="pr-3 text-right text-muted">TSh 23</td>
+                        <td class="pr-3 text-right font-bold">TSh 327</td>
+                        <td class="text-right"><span class="pill pill-success">50.3%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=18&amp;qty=10">Instagram comments (you write them)</a></td>
+                        <td class="pr-3">10</td>
+                        <td class="pr-3 text-right">TSh 750</td>
+                        <td class="pr-3 text-right text-muted">TSh 400</td>
+                        <td class="pr-3 text-right text-muted">TSh 27</td>
+                        <td class="pr-3 text-right font-bold">TSh 323</td>
+                        <td class="text-right"><span class="pill pill-success">43%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=11&amp;qty=10">TikTok comments (you write them)</a></td>
+                        <td class="pr-3">10</td>
+                        <td class="pr-3 text-right">TSh 750</td>
+                        <td class="pr-3 text-right text-muted">TSh 400</td>
+                        <td class="pr-3 text-right text-muted">TSh 27</td>
+                        <td class="pr-3 text-right font-bold">TSh 323</td>
+                        <td class="text-right"><span class="pill pill-success">43%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=17&amp;qty=250">Instagram likes</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 700</td>
+                        <td class="pr-3 text-right text-muted">TSh 375</td>
+                        <td class="pr-3 text-right text-muted">TSh 25</td>
+                        <td class="pr-3 text-right font-bold">TSh 300</td>
+                        <td class="text-right"><span class="pill pill-success">42.8%</span></td>
+                    </tr>
+                                    <tr>
+                        <td class="py-2 pr-3"><a class="font-semibold hover:underline" href="/dumaboost-preview/admin/profit?service=10&amp;qty=250">TikTok likes</a></td>
+                        <td class="pr-3">250</td>
+                        <td class="pr-3 text-right">TSh 700</td>
+                        <td class="pr-3 text-right text-muted">TSh 375</td>
+                        <td class="pr-3 text-right text-muted">TSh 25</td>
+                        <td class="pr-3 text-right font-bold">TSh 300</td>
+                        <td class="text-right"><span class="pill pill-success">42.8%</span></td>
+                    </tr>
+                            </tbody>
+        </table>
+    </div>
+</section>
+    </main>
+</div>
+
+
+</body></html>
