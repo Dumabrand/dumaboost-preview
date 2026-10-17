@@ -1,0 +1,58 @@
+{
+  "id": "/dumaboost-preview/",
+  "start_url": "/dumaboost-preview/?source=pwa",
+  "scope": "/dumaboost-preview/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0B0B0F",
+  "categories": [
+    "business",
+    "shopping"
+  ],
+  "icons": [
+    {
+      "src": "/dumaboost-preview/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/dumaboost-preview/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/dumaboost-preview/icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/dumaboost-preview/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/dumaboost-preview/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "DumaBoost",
+  "short_name": "DumaBoost",
+  "lang": "sw",
+  "description": "Matangazo halali ya kidijitali, malipo kwa simu.",
+  "shortcuts": [
+    {
+      "name": "Huduma",
+      "url": "/dumaboost-preview/huduma"
+    },
+    {
+      "name": "Fuatilia oda",
+      "url": "/dumaboost-preview/fuatilia"
+    }
+  ]
+}

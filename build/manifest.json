@@ -1,0 +1,54 @@
+{
+  "node_modules/@fontsource-variable/outfit/files/outfit-latin-ext-wght-normal.woff2": {
+    "file": "assets/outfit-latin-ext-wght-normal-DdQaqQDo.woff2",
+    "src": "node_modules/@fontsource-variable/outfit/files/outfit-latin-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2": {
+    "file": "assets/outfit-latin-wght-normal-Bc-8i84L.woff2",
+    "src": "node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/unbounded/files/unbounded-cyrillic-ext-wght-normal.woff2": {
+    "file": "assets/unbounded-cyrillic-ext-wght-normal-2qyXmZWE.woff2",
+    "src": "node_modules/@fontsource-variable/unbounded/files/unbounded-cyrillic-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/unbounded/files/unbounded-cyrillic-wght-normal.woff2": {
+    "file": "assets/unbounded-cyrillic-wght-normal-C627f1f8.woff2",
+    "src": "node_modules/@fontsource-variable/unbounded/files/unbounded-cyrillic-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/unbounded/files/unbounded-latin-ext-wght-normal.woff2": {
+    "file": "assets/unbounded-latin-ext-wght-normal-D6H-S6MW.woff2",
+    "src": "node_modules/@fontsource-variable/unbounded/files/unbounded-latin-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/unbounded/files/unbounded-latin-wght-normal.woff2": {
+    "file": "assets/unbounded-latin-wght-normal-D5afBTBx.woff2",
+    "src": "node_modules/@fontsource-variable/unbounded/files/unbounded-latin-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/unbounded/files/unbounded-vietnamese-wght-normal.woff2": {
+    "file": "assets/unbounded-vietnamese-wght-normal-rat7GD3o.woff2",
+    "src": "node_modules/@fontsource-variable/unbounded/files/unbounded-vietnamese-wght-normal.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DAFYR-C1.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "assets": [
+      "assets/unbounded-cyrillic-ext-wght-normal-2qyXmZWE.woff2",
+      "assets/unbounded-cyrillic-wght-normal-C627f1f8.woff2",
+      "assets/unbounded-vietnamese-wght-normal-rat7GD3o.woff2",
+      "assets/unbounded-latin-ext-wght-normal-D6H-S6MW.woff2",
+      "assets/unbounded-latin-wght-normal-D5afBTBx.woff2",
+      "assets/outfit-latin-ext-wght-normal-DdQaqQDo.woff2",
+      "assets/outfit-latin-wght-normal-Bc-8i84L.woff2"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DuLJN8ly.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

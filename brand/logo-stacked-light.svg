@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 150" role="img" aria-label="DumaBoost">
+  <g transform="translate(58 0)">
+    <rect width="64" height="64" rx="18" fill="#0B0B0F"/>
+    <g transform="translate(5.5 0) skewX(-8)">
+      <path d="M19 14h12c10.5 0 18 7.6 18 18s-7.5 18-18 18H19z" fill="#D4FF3A"/>
+      <circle cx="27.5" cy="40" r="2.4" fill="#0B0B0F"/><circle cx="34" cy="33" r="2.9" fill="#0B0B0F"/><circle cx="40.5" cy="25.5" r="3.4" fill="#FF3D7F"/>
+    </g>
+  </g>
+  <text x="90" y="112" text-anchor="middle" font-family="'Unbounded', 'Arial Black', sans-serif" font-size="34" letter-spacing="-1" fill="#0B0B0F"><tspan font-weight="800">duma</tspan><tspan font-weight="500">boost</tspan></text>
+  <text x="90" y="138" text-anchor="middle" font-family="'Outfit', Arial, sans-serif" font-size="11" letter-spacing="2.5" fill="#0B0B0F" opacity=".7">BY DUMA BRAND</text>
+</svg>
